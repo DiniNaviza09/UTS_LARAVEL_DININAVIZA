@@ -1,35 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="/">POLGAN ADMIN</a>
+        <a class="navbar-brand fw-bold fs-4" href="/">
+            ✨ Polgan App
+        </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            @@ -11,24 +13,35 @@
+            aria-label="Toggle navigation">
+
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-            <ul class="navbar-nav ms-auto">
+            
+            <ul class="navbar-nav ms-auto align-items-center gap-2">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link text-white" href="/">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">Dashboard</a>
+                    <a class="nav-link text-white" href="/dashboard">Dashboard</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/users">Users</a>
+                    <a class="nav-link text-white" href="/users">Users</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/users/create">Create User</a>
+                    <a class="nav-link text-white" href="/product">Product</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-primary px-4 rounded-pill"
+                        href="/login">
+                        Login
+                    </a>
                 </li>
 
             </ul>
 
         </div>
-
-    </div>
-</nav>

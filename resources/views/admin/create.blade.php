@@ -2,36 +2,76 @@
 
 @section('content')
 
-<div class="d-flex justify-content-center">
+<div class="row justify-content-center">
 
-    <div class="card card-soft p-4" style="width: 450px;">
+    <div class="col-md-7">
 
-        <h2 class="text-center mb-3">Create User</h2>
+        <div class="card shadow border-0 rounded-4 p-5">
 
-        <form action="/users" method="POST">
+            <h2 class="fw-bold mb-4 text-primary">
+                Tambah User
+            </h2>
 
-            @csrf
+            <form action="{{ route('users.store') }}" method="POST">
+                
+                @csrf
 
-            <div class="mb-3">
-                <label>Name</label>
-                <input type="text" name="name" class="form-control" required>
-            </div>
+                {{-- Nama --}}
+                <div class="mb-3">
 
-            <div class="mb-3">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" required>
-            </div>
+                    <label class="form-label fw-semibold">
+                        Nama
+                    </label>
 
-            <div class="mb-3">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control" required>
-            </div>
+                    <input 
+                        type="text"
+                        name="name"
+                        class="form-control form-control-lg rounded-4"
+                        required
+                    >
 
-            <button class="btn btn-primary w-100">
-                Save User
-            </button>
+                </div>
 
-        </form>
+                {{-- Email --}}
+                <div class="mb-3">
+
+                    <label class="form-label fw-semibold">
+                        Email
+                    </label>
+
+                    <input 
+                        type="email"
+                        name="email"
+                        class="form-control form-control-lg rounded-4"
+                        required
+                    >
+
+                </div>
+
+                {{-- Password --}}
+                <div class="mb-4">
+
+                    <label class="form-label fw-semibold">
+                        Password
+                    </label>
+
+                    <input 
+                        type="password"
+                        name="password"
+                        class="form-control form-control-lg rounded-4"
+                        required
+                    >
+
+                </div>
+
+                {{-- Button --}}
+                <button class="btn btn-primary btn-lg rounded-pill px-5">
+                    Simpan User
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
 

@@ -1,46 +1,52 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Admin Panel</title>
+    <title>Laravel Modern UI</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{-- Bootstrap CSS --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        body{
-            background: #f5f7fb;
+
+        body {
+            background: #f4f7fb;
+            font-family: 'Segoe UI', sans-serif;
         }
 
-        .card-soft{
+        .card-modern {
             border: none;
-            border-radius: 18px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
 
-        .navbar{
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .title{
+        .title-modern {
             font-weight: bold;
-            font-size: 28px;
+            color: #1d3557;
         }
+
     </style>
+
 </head>
 
 <body>
 
-@include('layouts.navigation')
+    {{-- Navbar --}}
+    @include('layouts.navigation')
 
-<div class="container py-4">
+    {{-- Content --}}
+    <div class="container py-5">
 
-    @yield('content')
+        @yield('content')
 
-</div>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- Bootstrap JS --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

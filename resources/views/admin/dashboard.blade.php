@@ -2,35 +2,39 @@
 
 @section('content')
 
-<div class="card card-soft p-4">
 
-    <h2 class="title">Dashboard</h2>
-    <p class="text-muted">Welcome to your admin panel</p>
+<div class="card-modern bg-white p-5">
 
-    <div class="row mt-4">
+    <h1 class="title-modern mb-3">
+        Dashboard Admin
+    </h1>
 
-        <div class="col-md-4">
-            <div class="card bg-primary text-white card-soft p-4">
-                <h5>Users</h5>
+    <p class="text-muted">
+        Selamat datang di halaman dashboard Laravel modern.
+    </p>
+
+    <div class="row mt-5">
+
+        <div class="col-md-4 mb-4">
+            <div class="card-modern bg-primary text-white p-4">
+                <h5>Total Users</h5>
                 <h2>120</h2>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card bg-success text-white card-soft p-4">
-                <h5>Products</h5>
-                <h2>80</h2>
+        <div class="col-md-4 mb-4">
+            <div class="card-modern bg-success text-white p-4">
+                <h5>Total Product</h5>
+                <h2>58</h2>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card bg-dark text-white card-soft p-4">
-                <h5>Orders</h5>
-                <h2>50</h2>
+        <div class="col-md-4 mb-4">
+            <div class="card-modern bg-dark text-white p-4">
+                <h5>Total Order</h5>
+                <h2>200</h2>
             </div>
         </div>
-
-    </div>
 
 </div>
 
